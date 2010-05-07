@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
-  
+
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.yang.lift.helloworld</groupId>
   <artifactId>yangHelloworld</artifactId>
@@ -42,6 +42,17 @@
       <groupId>net.liftweb</groupId>
       <artifactId>lift-mapper</artifactId>
       <version>2.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>jfree</groupId>
+      <artifactId>jfreechart</artifactId>
+      <version>1.0.11</version>
+      <exclusions>
+        <exclusion>
+          <groupId>gnujaxp</groupId>
+          <artifactId>gnujaxp</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>javax.servlet</groupId>

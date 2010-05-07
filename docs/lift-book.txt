@@ -1,0 +1,23 @@
+lift-master.pdf
+================
+
+2010.05.07
+-----------
+
+1、21:10 - 23:22
+   p36
+
+   模板 default.html
+   <lift:bind name="content" />
+
+   应用 index.html
+   <lift:surround with="default" at="content">
+   --告诉lift，采用default.html模板，在content位置
+
+   片段 snippet
+   <lift:helloWorld.howdy/> = <lift:class.method>
+
+2、save/pocketchangeapp.zip
+
+
+   --END
