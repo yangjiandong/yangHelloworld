@@ -43,9 +43,9 @@ project/boot
 #  ^\.pc/
 
 # IntelliJ
-*.iml
-*.ipr
-*.iws
+.iml
+.ipr
+.iws
 .idea
 
 # Pax Runner (for easy OSGi launching)
