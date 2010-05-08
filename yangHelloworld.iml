@@ -1,428 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module relativePaths="false" type="J2EE_WEB_MODULE" version="4">
+<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
   <component name="FacetManager">
     <facet type="Scala" name="Scala">
-      <configuration />
+      <configuration>
+        <option name="takeFromSettings" value="true" />
+        <option name="myScalaCompilerJarPaths">
+          <array>
+            <option value="$MAVEN_REPOSITORY$/org/scala-lang/scala-compiler/2.7.7/scala-compiler-2.7.7.jar" />
+          </array>
+        </option>
+        <option name="myScalaSdkJarPaths">
+          <array>
+            <option value="$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.7.7/scala-library-2.7.7.jar" />
+          </array>
+        </option>
+      </configuration>
     </facet>
   </component>
   <component name="NewModuleRootManager" inherit-compiler-output="false">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
-    <exclude-output />
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/src/main/scala" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/test/scala" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/scala" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/resources" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/scala" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/home/local/repo/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://d:/home/local/repo/javax/servlet/servlet-api/2.5/servlet-api-2.5-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/home/local/repo/junit/junit/4.7/junit-4.7.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://d:/home/local/repo/junit/junit/4.7/junit-4.7-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/home/local/repo/org/mortbay/jetty/jetty/6.1.24/jetty-6.1.24.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://d:/home/local/repo/org/mortbay/jetty/jetty/6.1.24/jetty-6.1.24-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/home/local/repo/org/mortbay/jetty/jetty-util/6.1.24/jetty-util-6.1.24.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://d:/home/local/repo/org/mortbay/jetty/jetty-util/6.1.24/jetty-util-6.1.24-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/home/local/repo/org/mortbay/jetty/servlet-api/2.5-20081211/servlet-api-2.5-20081211.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/home/local/repo/net/liftweb/lift-mapper/2.0-SNAPSHOT/lift-mapper-2.0-SNAPSHOT.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://d:/home/local/repo/net/liftweb/lift-mapper/2.0-SNAPSHOT/lift-mapper-2.0-SNAPSHOT-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/home/local/repo/net/liftweb/lift-webkit/2.0-SNAPSHOT/lift-webkit-2.0-SNAPSHOT.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://d:/home/local/repo/net/liftweb/lift-webkit/2.0-SNAPSHOT/lift-webkit-2.0-SNAPSHOT-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/home/local/repo/net/liftweb/lift-util/2.0-SNAPSHOT/lift-util-2.0-SNAPSHOT.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://d:/home/local/repo/net/liftweb/lift-util/2.0-SNAPSHOT/lift-util-2.0-SNAPSHOT-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/home/local/repo/net/liftweb/lift-actor/2.0-SNAPSHOT/lift-actor-2.0-SNAPSHOT.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://d:/home/local/repo/net/liftweb/lift-actor/2.0-SNAPSHOT/lift-actor-2.0-SNAPSHOT-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/home/local/repo/net/liftweb/lift-common/2.0-SNAPSHOT/lift-common-2.0-SNAPSHOT.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://d:/home/local/repo/net/liftweb/lift-common/2.0-SNAPSHOT/lift-common-2.0-SNAPSHOT-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/home/local/repo/org/slf4j/slf4j-api/1.5.11/slf4j-api-1.5.11.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://d:/home/local/repo/org/slf4j/slf4j-api/1.5.11/slf4j-api-1.5.11-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/home/local/repo/log4j/log4j/1.2.14/log4j-1.2.14.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://d:/home/local/repo/log4j/log4j/1.2.14/log4j-1.2.14-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/home/local/repo/org/scala-lang/scala-library/2.7.7/scala-library-2.7.7.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://d:/home/local/repo/org/scala-lang/scala-library/2.7.7/scala-library-2.7.7-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/home/local/repo/net/liftweb/lift-json/2.0-SNAPSHOT/lift-json-2.0-SNAPSHOT.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://d:/home/local/repo/net/liftweb/lift-json/2.0-SNAPSHOT/lift-json-2.0-SNAPSHOT-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/home/local/repo/com/thoughtworks/paranamer/paranamer/2.0/paranamer-2.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://d:/home/local/repo/com/thoughtworks/paranamer/paranamer/2.0/paranamer-2.0-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/home/local/repo/javax/mail/mail/1.4.1/mail-1.4.1.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://d:/home/local/repo/javax/mail/mail/1.4.1/mail-1.4.1-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/home/local/repo/javax/activation/activation/1.1/activation-1.1.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://d:/home/local/repo/javax/activation/activation/1.1/activation-1.1-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/home/local/repo/commons-codec/commons-codec/1.3/commons-codec-1.3.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://d:/home/local/repo/commons-codec/commons-codec/1.3/commons-codec-1.3-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/home/local/repo/org/slf4j/slf4j-log4j12/1.5.11/slf4j-log4j12-1.5.11.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://d:/home/local/repo/org/slf4j/slf4j-log4j12/1.5.11/slf4j-log4j12-1.5.11-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/home/local/repo/commons-fileupload/commons-fileupload/1.2.1/commons-fileupload-1.2.1.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://d:/home/local/repo/commons-fileupload/commons-fileupload/1.2.1/commons-fileupload-1.2.1-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/home/local/repo/com/h2database/h2/1.2.134/h2-1.2.134.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://d:/home/local/repo/com/h2database/h2/1.2.134/h2-1.2.134-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/home/local/repo/org/apache/derby/derby/10.5.3.0_1/derby-10.5.3.0_1.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/home/local/repo/org/scala-lang/scala-compiler/2.7.7/scala-compiler-2.7.7.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://d:/home/local/repo/org/scala-lang/scala-compiler/2.7.7/scala-compiler-2.7.7-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/home/local/repo/jfree/jfreechart/1.0.11/jfreechart-1.0.11.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://d:/home/local/repo/jfree/jfreechart/1.0.11/jfreechart-1.0.11-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/home/local/repo/jfree/jcommon/1.0.14/jcommon-1.0.14.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://d:/home/local/repo/jfree/jcommon/1.0.14/jcommon-1.0.14-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-  </component>
-  <component name="WebModuleBuildComponent">
-    <setting name="EXPLODED_URL" value="file://$MODULE_DIR$/target/yangHelloworld" />
-  </component>
-  <component name="WebModuleProperties">
-    <containerElement type="library" level="module">
-      <attribute name="method" value="0" />
-      <attribute name="URI" value="/WEB-INF/lib/servlet-api-2.5.jar" />
-      <url>jar://D:/home/local/repo/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar!/</url>
-    </containerElement>
-    <containerElement type="library" level="module">
-      <attribute name="method" value="0" />
-      <attribute name="URI" value="/WEB-INF/lib/junit-4.7.jar" />
-      <url>jar://D:/home/local/repo/junit/junit/4.7/junit-4.7.jar!/</url>
-    </containerElement>
-    <containerElement type="library" level="module">
-      <attribute name="method" value="0" />
-      <attribute name="URI" value="/WEB-INF/lib/jetty-6.1.24.jar" />
-      <url>jar://D:/home/local/repo/org/mortbay/jetty/jetty/6.1.24/jetty-6.1.24.jar!/</url>
-    </containerElement>
-    <containerElement type="library" level="module">
-      <attribute name="method" value="0" />
-      <attribute name="URI" value="/WEB-INF/lib/jetty-util-6.1.24.jar" />
-      <url>jar://D:/home/local/repo/org/mortbay/jetty/jetty-util/6.1.24/jetty-util-6.1.24.jar!/</url>
-    </containerElement>
-    <containerElement type="library" level="module">
-      <attribute name="method" value="0" />
-      <attribute name="URI" value="/WEB-INF/lib/servlet-api-2.5-20081211.jar" />
-      <url>jar://D:/home/local/repo/org/mortbay/jetty/servlet-api/2.5-20081211/servlet-api-2.5-20081211.jar!/</url>
-    </containerElement>
-    <containerElement type="library" level="module">
-      <attribute name="method" value="1" />
-      <attribute name="URI" value="/WEB-INF/lib/lift-mapper-2.0-SNAPSHOT.jar" />
-      <url>jar://D:/home/local/repo/net/liftweb/lift-mapper/2.0-SNAPSHOT/lift-mapper-2.0-SNAPSHOT.jar!/</url>
-    </containerElement>
-    <containerElement type="library" level="module">
-      <attribute name="method" value="1" />
-      <attribute name="URI" value="/WEB-INF/lib/lift-webkit-2.0-SNAPSHOT.jar" />
-      <url>jar://D:/home/local/repo/net/liftweb/lift-webkit/2.0-SNAPSHOT/lift-webkit-2.0-SNAPSHOT.jar!/</url>
-    </containerElement>
-    <containerElement type="library" level="module">
-      <attribute name="method" value="1" />
-      <attribute name="URI" value="/WEB-INF/lib/lift-util-2.0-SNAPSHOT.jar" />
-      <url>jar://D:/home/local/repo/net/liftweb/lift-util/2.0-SNAPSHOT/lift-util-2.0-SNAPSHOT.jar!/</url>
-    </containerElement>
-    <containerElement type="library" level="module">
-      <attribute name="method" value="1" />
-      <attribute name="URI" value="/WEB-INF/lib/lift-actor-2.0-SNAPSHOT.jar" />
-      <url>jar://D:/home/local/repo/net/liftweb/lift-actor/2.0-SNAPSHOT/lift-actor-2.0-SNAPSHOT.jar!/</url>
-    </containerElement>
-    <containerElement type="library" level="module">
-      <attribute name="method" value="1" />
-      <attribute name="URI" value="/WEB-INF/lib/lift-common-2.0-SNAPSHOT.jar" />
-      <url>jar://D:/home/local/repo/net/liftweb/lift-common/2.0-SNAPSHOT/lift-common-2.0-SNAPSHOT.jar!/</url>
-    </containerElement>
-    <containerElement type="library" level="module">
-      <attribute name="method" value="1" />
-      <attribute name="URI" value="/WEB-INF/lib/slf4j-api-1.5.11.jar" />
-      <url>jar://D:/home/local/repo/org/slf4j/slf4j-api/1.5.11/slf4j-api-1.5.11.jar!/</url>
-    </containerElement>
-    <containerElement type="library" level="module">
-      <attribute name="method" value="1" />
-      <attribute name="URI" value="/WEB-INF/lib/log4j-1.2.14.jar" />
-      <url>jar://D:/home/local/repo/log4j/log4j/1.2.14/log4j-1.2.14.jar!/</url>
-    </containerElement>
-    <containerElement type="library" level="module">
-      <attribute name="method" value="1" />
-      <attribute name="URI" value="/WEB-INF/lib/scala-library-2.7.7.jar" />
-      <url>jar://D:/home/local/repo/org/scala-lang/scala-library/2.7.7/scala-library-2.7.7.jar!/</url>
-    </containerElement>
-    <containerElement type="library" level="module">
-      <attribute name="method" value="1" />
-      <attribute name="URI" value="/WEB-INF/lib/lift-json-2.0-SNAPSHOT.jar" />
-      <url>jar://D:/home/local/repo/net/liftweb/lift-json/2.0-SNAPSHOT/lift-json-2.0-SNAPSHOT.jar!/</url>
-    </containerElement>
-    <containerElement type="library" level="module">
-      <attribute name="method" value="1" />
-      <attribute name="URI" value="/WEB-INF/lib/paranamer-2.0.jar" />
-      <url>jar://D:/home/local/repo/com/thoughtworks/paranamer/paranamer/2.0/paranamer-2.0.jar!/</url>
-    </containerElement>
-    <containerElement type="library" level="module">
-      <attribute name="method" value="1" />
-      <attribute name="URI" value="/WEB-INF/lib/mail-1.4.1.jar" />
-      <url>jar://D:/home/local/repo/javax/mail/mail/1.4.1/mail-1.4.1.jar!/</url>
-    </containerElement>
-    <containerElement type="library" level="module">
-      <attribute name="method" value="1" />
-      <attribute name="URI" value="/WEB-INF/lib/activation-1.1.jar" />
-      <url>jar://D:/home/local/repo/javax/activation/activation/1.1/activation-1.1.jar!/</url>
-    </containerElement>
-    <containerElement type="library" level="module">
-      <attribute name="method" value="1" />
-      <attribute name="URI" value="/WEB-INF/lib/commons-codec-1.3.jar" />
-      <url>jar://D:/home/local/repo/commons-codec/commons-codec/1.3/commons-codec-1.3.jar!/</url>
-    </containerElement>
-    <containerElement type="library" level="module">
-      <attribute name="method" value="1" />
-      <attribute name="URI" value="/WEB-INF/lib/slf4j-log4j12-1.5.11.jar" />
-      <url>jar://D:/home/local/repo/org/slf4j/slf4j-log4j12/1.5.11/slf4j-log4j12-1.5.11.jar!/</url>
-    </containerElement>
-    <containerElement type="library" level="module">
-      <attribute name="method" value="1" />
-      <attribute name="URI" value="/WEB-INF/lib/commons-fileupload-1.2.1.jar" />
-      <url>jar://D:/home/local/repo/commons-fileupload/commons-fileupload/1.2.1/commons-fileupload-1.2.1.jar!/</url>
-    </containerElement>
-    <containerElement type="library" level="module">
-      <attribute name="method" value="1" />
-      <attribute name="URI" value="/WEB-INF/lib/h2-1.2.134.jar" />
-      <url>jar://D:/home/local/repo/com/h2database/h2/1.2.134/h2-1.2.134.jar!/</url>
-    </containerElement>
-    <containerElement type="library" level="module">
-      <attribute name="method" value="1" />
-      <attribute name="URI" value="/WEB-INF/lib/derby-10.5.3.0_1.jar" />
-      <url>jar://D:/home/local/repo/org/apache/derby/derby/10.5.3.0_1/derby-10.5.3.0_1.jar!/</url>
-    </containerElement>
-    <containerElement type="library" level="module">
-      <attribute name="method" value="0" />
-      <attribute name="URI" value="/WEB-INF/lib/scala-compiler-2.7.7.jar" />
-      <url>jar://D:/home/local/repo/org/scala-lang/scala-compiler/2.7.7/scala-compiler-2.7.7.jar!/</url>
-    </containerElement>
-    <containerElement type="library" level="module">
-      <attribute name="method" value="1" />
-      <attribute name="URI" value="/WEB-INF/lib/jfreechart-1.0.11.jar" />
-      <url>jar://D:/home/local/repo/jfree/jfreechart/1.0.11/jfreechart-1.0.11.jar!/</url>
-    </containerElement>
-    <containerElement type="library" level="module">
-      <attribute name="method" value="1" />
-      <attribute name="URI" value="/WEB-INF/lib/jcommon-1.0.14.jar" />
-      <url>jar://D:/home/local/repo/jfree/jcommon/1.0.14/jcommon-1.0.14.jar!/</url>
-    </containerElement>
-    <deploymentDescriptor version="2.3" name="web.xml" optional="false" url="file://$MODULE_DIR$/src/main/webapp/WEB-INF/web.xml" />
-    <webroots>
-      <root relative="/" url="file://$MODULE_DIR$/src/main/webapp" />
-    </webroots>
+    <orderEntry type="library" exported="" name="Maven: net.liftweb:lift-mapper:2.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" exported="" name="Maven: net.liftweb:lift-webkit:2.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" exported="" name="Maven: net.liftweb:lift-util:2.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" exported="" name="Maven: net.liftweb:lift-actor:2.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" exported="" name="Maven: net.liftweb:lift-common:2.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" exported="" name="Maven: org.slf4j:slf4j-api:1.5.11" level="project" />
+    <orderEntry type="library" exported="" name="Maven: log4j:log4j:1.2.14" level="project" />
+    <orderEntry type="library" exported="" name="Maven: org.scala-lang:scala-library:2.7.7" level="project" />
+    <orderEntry type="library" exported="" name="Maven: net.liftweb:lift-json:2.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" exported="" name="Maven: com.thoughtworks.paranamer:paranamer:2.0" level="project" />
+    <orderEntry type="library" exported="" name="Maven: javax.mail:mail:1.4.1" level="project" />
+    <orderEntry type="library" exported="" name="Maven: javax.activation:activation:1.1" level="project" />
+    <orderEntry type="library" exported="" name="Maven: commons-codec:commons-codec:1.3" level="project" />
+    <orderEntry type="library" exported="" name="Maven: org.slf4j:slf4j-log4j12:1.5.11" level="project" />
+    <orderEntry type="library" exported="" name="Maven: commons-fileupload:commons-fileupload:1.2.1" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Maven: com.h2database:h2:1.2.134" level="project" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="Maven: org.apache.derby:derby:10.5.3.0_1" level="project" />
+    <orderEntry type="library" exported="" name="Maven: jfree:jfreechart:1.0.11" level="project" />
+    <orderEntry type="library" exported="" name="Maven: jfree:jcommon:1.0.14" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: junit:junit:4.7" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet:servlet-api:2.5" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.mortbay.jetty:jetty:6.1.24" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.mortbay.jetty:jetty-util:6.1.24" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.mortbay.jetty:servlet-api:2.5-20081211" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.scala-lang:scala-compiler:2.7.7" level="project" />
   </component>
 </module>
 

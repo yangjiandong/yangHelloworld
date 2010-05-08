@@ -1,0 +1,48 @@
+ 在Windows下用IntelliJ IDEA 9.0编译器运行lift-web服务器
+ ====================================================
+
+第一、下载IntelliJ IDEA 9.0编译器，（下载地址：http://www.jetbrains.com/idea/download/index.html）安装该编译器。
+
+第二、配置IntelliJ IDEA 9.0编译器，让Lift-web运行起来。
+
+1、安装scala插件有两种方法:
+
+第一种方法：在线安装步骤如下
+
+file——settings——plugins——Available下找到scala插件——点下载即可。
+
+第二种方法：离线安装步骤如下：
+
+把下载下来的scala插件拷贝到路经C:\Users\xmq\.IntelliJIdea90\config\plugins下即可。
+
+注：C:\Users\xmq\或C:\我的文档。
+
+2、安装JDK插件：
+
+file——Project Structure——new——JSDK——ok
+
+这样JDK安装完成。
+
+3、导入Lift-web项目文件（file--Open Project——pom.xml)，找到Lift-web所在的位置即可，打开pom.xml文件。(如：E:\xmq\Lift2\pom.xml)
+
+4、添加scala脚本语言：
+
+右键单击项目下的Add Framework Support..——勾选scala——Download missing files to:找 到scala脚语言在的位置（C:\scala277）或右键单击项目下的Add Framework Support..——勾选scala——Pick files from disk(C:\scala277\lib)。
+
+scala脚本语言添加完成。
+
+4、添加maven运行环境：
+
+file——settings——Maven——Maven home directory——勾选Override(如：C:\maven)。
+
+maven运行环境配置完成。
+
+第三、在IntelliJ IDEA 9.0编译器下运行lift-web项目：
+
+点击IntelliJ IDEA 9.0右边的 Maven Project选项——lift-test(此处是你的lift-web的项目文件名)——Plugins——jetty——jetty:run。
+
+第四、进入浏览器下输入 http://127.0.0.1:8080  完成。
+
+说明：在此之前必把scala、maven 和jdk分别配置好才行，否则不能运行。具体详解请查看我写的“Windows下配置Lift-web服务器”文章。
+
+   --END                                                       
