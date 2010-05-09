@@ -1,6 +1,15 @@
 lift
 ====
 
+2010.05.09
+-----------
+
+1. use intellij-ic9.0 in ubuntu10.4
+
+2. git为显示加上颜色 
+$ git config color.(branch|diff|interactive|status) auto，
+或者$ git config color.ui true
+
 2010.05.08
 -----------
 
@@ -9,6 +18,9 @@ lift
    save/idea.txt
 
    感觉比eclipse + scala 速度快
+
+2、自定义快捷
+   alt + . -- base code complete,取代 ctl + space
    
 2010.05.07
 -----------
