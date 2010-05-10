@@ -1,0 +1,53 @@
+step by step
+=============
+
+1、set env M2_HOME = 
+
+2、git为显示加上颜色
+$ git config color.(branch|diff|interactive|status) auto，
+或者$ git config color.ui true
+
+3、如果采用idea，设置 idea vm
+-Xms256m
+-Xmx512m
+-XX:MaxPermSize=256m
+-ea
+-server
+-XX:-UseParallelGC
+
+4、几个有用的script
+http://richard.dallaway.com/shell-aliases-for-lift-development
+
+$ cat ~/.profile
+export REBEL_JAR=/Users/richard/Developer/libs/javarebel/jrebel-2.1a/jrebel.jar 
+export MAVEN_HOME=/Users/richard/Applications/maven/apache-maven-2.2.1
+export MAVEN_OPTS="-Xmx256M -XX:MaxPermSize=256m -Dfile.encoding=utf8"
+export JAVA_OPTS="-Dfile.encoding=utf8"
+export PATH=$MAVEN_HOME/bin:$PATH
+
+# E.g., "m package" to run the Maven package target in offline mode:
+alias m='mvn -o'
+
+
+# Run Maven in a mode that fetches sources and documentation for libraries:
+alias mm='mvn -DdownloadJavadocs=true -DdownloadSources=true'
+
+
+# Start your Lift application in the REPL
+alias liftconsole='mvn -o scala:console -DmainConsole=LiftConsole'
+
+
+# Start your Lift application using JRebel
+alias mmm='MAVEN_OPTS="-Dfile.encoding=utf8 -XX:MaxPermSize=256m -Djetty.scanIntervalSeconds=0 -noverify -javaagent:$REBEL_JAR" mvn -o jetty:run'
+
+
+# Create a new 2.0-M2 Lift application
+alias liftcreate="mvn archetype:generate -DarchetypeGroupId=net.liftweb -DarchetypeArtifactId=lift-archetype-basic -DarchetypeVersion=2.0-M2 -DremoteRepositories=http://scala-tools.org/repo-releases" 
+
+5、开发过程
+
+   mvn-run.bat
+   修改代码后，mvn compile
+
+
+   --END

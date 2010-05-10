@@ -1,0 +1,10 @@
+TODO
+=======
+
+1、jrebel + lift + mvn
+
+   mvn-run.bat
+   修改代码后，mvn compile
+
+
+   --END

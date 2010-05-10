@@ -51,3 +51,4 @@ project/boot
 # Pax Runner (for easy OSGi launching)
 runner
 
+jrebel.info
