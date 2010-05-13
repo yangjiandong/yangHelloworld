@@ -1,0 +1,28 @@
+
+http://progit.org/book/zh/ch2-5.html
+
+1、查看当前的远程库
+
+要查看当前配置有哪些远程仓库，可以用 git remote 命令
+至少可以看到一个名为 origin 的远程库，Git 默认使用这个名字来标识你所克隆的原始仓库：
+
+2、添加远程仓库
+
+要添加一个新的远程仓库，可以指定一个简单的名字，以便将来引用，
+运行 git remote add [shortname] [url]
+
+3、从远程仓库抓取数据
+
+正如之前所看到的，可以用下面的命令从远程仓库抓取数据到本地：
+
+$ git fetch [remote-name]
+
+4、推送数据到远程仓库
+git push [remote-name] [branch-name]
+
+5、查看远程仓库信息
+git remote show [remote-name]
+
+http://progit.org/book/zh/ch2-6.html
+
+   --END

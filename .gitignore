@@ -52,3 +52,6 @@ project/boot
 runner
 
 jrebel.info
+javarebel.stats
+*.h2.db
+*.db

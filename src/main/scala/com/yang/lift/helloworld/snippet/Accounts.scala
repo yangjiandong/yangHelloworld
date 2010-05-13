@@ -1,14 +1,14 @@
 package com.yang.lift.helloworld.snippet
 
-import scala.xml._
-import net.liftweb._
-import _root_.net.liftweb.common._
-import http._
-import util._
+import _root_.net.liftweb.http._
 import S._
+import _root_.net.liftweb.util._
+import Helpers._
+import _root_.scala.xml._
+import _root_.net.liftweb.common._
+import util._
 import SHtml._
 import scala.xml._
-import Helpers._
 import js._
 import JsCmds._
 import JE._
