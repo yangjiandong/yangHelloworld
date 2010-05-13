@@ -7,8 +7,9 @@ lift-master.pdf
 1、20:12 - 20:25
    20:35 - 20:54
    21:28 - 21:45
-   21:51
-                 
+   21:51 - 22:41
+   p70
+
    standard imports
 import _root_.net.liftweb.http._
 import S._
