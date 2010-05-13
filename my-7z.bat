@@ -1,0 +1,1 @@
+7z a -tzip my.zip @listfile.txt
