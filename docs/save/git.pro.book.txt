@@ -94,4 +94,35 @@ $ git merge one-branch
 3、push 分支到remote
    git push origin(默认remote) one-branch
 
+4、如果想在服务器上删除 serverfix 分支，运行下面的命令：
+$ git push origin :serverfix
+
+5、git config --global
+   定义的文件在home/.gitconfig
+
+6、alias
+$ git config --global alias.co checkout
+$ git config --global alias.br branch
+$ git config --global alias.ci commit
+$ git config --global alias.st status
+$ git config --global color.diff.meta "blue black bold"
+使用这种技术还可以创造出新的命令，比方说取消暂存文件时的输入比较繁琐，可以自己设置一下：
+
+$ git config --global alias.unstage 'reset HEAD --'
+
+这样一来，下面的两条命令完全等同：
+
+$ git unstage fileA
+$ git reset HEAD fileA
+
+显然，使用别名的方式看起来更清楚。另外，我们还经常设置 last 命令：
+
+$ git config --global alias.last 'log -1 HEAD'
+
+然后要看最后一次的提交信息，就变得简单多了：
+
+$ git last
+
+book/zh/ch7-1.html
+
    --END
