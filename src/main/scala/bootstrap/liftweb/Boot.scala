@@ -67,6 +67,9 @@ object MenuInfo {
 }
 
 object DBVendor extends ConnectionManager {
+  //multi database
+  //p118
+
   def newConnection(name: ConnectionIdentifier): Box[Connection] = {
     try {
       /**Uncomment if you really want Derby
@@ -75,8 +78,13 @@ object DBVendor extends ConnectionManager {
       val dm = DriverManager.getConnection("jdbc:derby:pca_example;create=true")
        */
 
-      Class.forName("org.h2.Driver")
-      val dm = DriverManager.getConnection("jdbc:h2:pca_example")
+      //Class.forName("org.h2.Driver")
+      //val dm = DriverManager.getConnection("jdbc:h2:pca_example")
+
+      //mysql
+      Class.forName("com.mysql.jdbc.Driver");
+      val dm = DriverManager.getConnection("jdbc:mysql://localhost/liftHelloworld?user=dev&password=dev");
+
       Full(dm)
     } catch {
       case e: Exception => e.printStackTrace; Empty
@@ -85,5 +93,14 @@ object DBVendor extends ConnectionManager {
 
   def releaseConnection(conn: Connection) {conn.close}
 }
+
+//multiple databases
+object SalesDB extends ConnectionIdentifier{
+  def jndiName = "sales"
+  }
+
+object EmployeeDB extends ConnectionIdentifier{
+  def jndiName = "employees"
+  }
 
 

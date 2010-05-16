@@ -24,13 +24,14 @@
   <classpathentry kind="var" path="M2_REPO/org/mortbay/jetty/jetty-util/6.1.24/jetty-util-6.1.24.jar" sourcepath="M2_REPO/org/mortbay/jetty/jetty-util/6.1.24/jetty-util-6.1.24-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/jfree/jfreechart/1.0.11/jfreechart-1.0.11.jar" sourcepath="M2_REPO/jfree/jfreechart/1.0.11/jfreechart-1.0.11-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/junit/junit/4.7/junit-4.7.jar" sourcepath="M2_REPO/junit/junit/4.7/junit-4.7-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/net/liftweb/lift-actor/2.0-SNAPSHOT/lift-actor-2.0-SNAPSHOT.jar" sourcepath="M2_REPO/net/liftweb/lift-actor/2.0-SNAPSHOT/lift-actor-2.0-SNAPSHOT-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/net/liftweb/lift-common/2.0-SNAPSHOT/lift-common-2.0-SNAPSHOT.jar" sourcepath="M2_REPO/net/liftweb/lift-common/2.0-SNAPSHOT/lift-common-2.0-SNAPSHOT-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/net/liftweb/lift-json/2.0-SNAPSHOT/lift-json-2.0-SNAPSHOT.jar" sourcepath="M2_REPO/net/liftweb/lift-json/2.0-SNAPSHOT/lift-json-2.0-SNAPSHOT-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/net/liftweb/lift-mapper/2.0-SNAPSHOT/lift-mapper-2.0-SNAPSHOT.jar" sourcepath="M2_REPO/net/liftweb/lift-mapper/2.0-SNAPSHOT/lift-mapper-2.0-SNAPSHOT-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/net/liftweb/lift-util/2.0-SNAPSHOT/lift-util-2.0-SNAPSHOT.jar" sourcepath="M2_REPO/net/liftweb/lift-util/2.0-SNAPSHOT/lift-util-2.0-SNAPSHOT-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/net/liftweb/lift-webkit/2.0-SNAPSHOT/lift-webkit-2.0-SNAPSHOT.jar" sourcepath="M2_REPO/net/liftweb/lift-webkit/2.0-SNAPSHOT/lift-webkit-2.0-SNAPSHOT-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/net/liftweb/lift-actor/2.0-M5/lift-actor-2.0-M5.jar" sourcepath="M2_REPO/net/liftweb/lift-actor/2.0-M5/lift-actor-2.0-M5-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/net/liftweb/lift-common/2.0-M5/lift-common-2.0-M5.jar" sourcepath="M2_REPO/net/liftweb/lift-common/2.0-M5/lift-common-2.0-M5-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/net/liftweb/lift-json/2.0-M5/lift-json-2.0-M5.jar" sourcepath="M2_REPO/net/liftweb/lift-json/2.0-M5/lift-json-2.0-M5-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/net/liftweb/lift-mapper/2.0-M5/lift-mapper-2.0-M5.jar" sourcepath="M2_REPO/net/liftweb/lift-mapper/2.0-M5/lift-mapper-2.0-M5-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/net/liftweb/lift-util/2.0-M5/lift-util-2.0-M5.jar" sourcepath="M2_REPO/net/liftweb/lift-util/2.0-M5/lift-util-2.0-M5-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/net/liftweb/lift-webkit/2.0-M5/lift-webkit-2.0-M5.jar" sourcepath="M2_REPO/net/liftweb/lift-webkit/2.0-M5/lift-webkit-2.0-M5-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/log4j/log4j/1.2.14/log4j-1.2.14.jar" sourcepath="M2_REPO/log4j/log4j/1.2.14/log4j-1.2.14-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/mysql/mysql-connector-java/5.1.9/mysql-connector-java-5.1.9.jar"/>
   <classpathentry kind="var" path="M2_REPO/com/thoughtworks/paranamer/paranamer/2.0/paranamer-2.0.jar" sourcepath="M2_REPO/com/thoughtworks/paranamer/paranamer/2.0/paranamer-2.0-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/scala-lang/scala-compiler/2.7.7/scala-compiler-2.7.7.jar" sourcepath="M2_REPO/org/scala-lang/scala-compiler/2.7.7/scala-compiler-2.7.7-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/scala-lang/scala-library/2.7.7/scala-library-2.7.7.jar" sourcepath="M2_REPO/org/scala-lang/scala-library/2.7.7/scala-library-2.7.7-sources.jar"/>
