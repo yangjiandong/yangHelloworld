@@ -27,6 +27,7 @@ class User extends MegaProtoUser[User] {
   def getSingleton = User // what's the "meta" server
 
   // define an additional field for a personal essay
+  //自定义字段
   object textArea extends MappedTextarea(this, 2048) {
     override def textareaRows  = 10
     override def textareaCols = 50
