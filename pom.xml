@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
-
+  
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.yang.lift.helloworld</groupId>
   <artifactId>yangHelloworld</artifactId>
@@ -13,6 +13,13 @@
   <inceptionYear>2010</inceptionYear>
   <properties>
     <scala.version>2.7.7</scala.version>
+    <!-- Common plugin settings -->
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <!-- vscaladoc settings -->
+    <maven.scaladoc.vscaladocVersion>1.2-SNAPSHOT</maven.scaladoc.vscaladocVersion>
+    <vscaladoc.links.liftweb.pathsufix>scaladocs/</vscaladoc.links.liftweb.pathsufix>
+    <vscaladoc.links.liftweb.baseurl>http://scala-tools.org/mvnsites/liftweb</vscaladoc.links.liftweb.baseurl>
   </properties>
 
   <repositories>
@@ -21,17 +28,11 @@
       <name>Scala-Tools Dependencies Repository for Releases</name>
       <url>http://scala-tools.org/repo-releases</url>
     </repository>
-    <repository>
-      <id>scala-tools.snapshots</id>
-      <name>Scala-Tools Dependencies Repository for Snapshots</name>
-      <url>http://scala-tools.org/repo-snapshots</url>
-      <snapshots/>
-    </repository>
   </repositories>
 
   <pluginRepositories>
     <pluginRepository>
-      <id>scala-tools.releases</id>
+      <id>scala-tools.org.releases</id>
       <name>Scala-Tools Plugins Repository for Releases</name>
       <url>http://scala-tools.org/repo-releases</url>
     </pluginRepository>
@@ -44,15 +45,10 @@
       <version>2.0-M5</version>
     </dependency>
     <dependency>
-      <groupId>jfree</groupId>
-      <artifactId>jfreechart</artifactId>
-      <version>1.0.11</version>
-      <exclusions>
-        <exclusion>
-          <groupId>gnujaxp</groupId>
-          <artifactId>gnujaxp</artifactId>
-        </exclusion>
-      </exclusions>
+      <groupId>com.h2database</groupId>
+      <artifactId>h2</artifactId>
+      <version>1.2.134</version>
+      <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>javax.servlet</groupId>
@@ -64,6 +60,12 @@
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.7</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.scala-tools.testing</groupId>
+      <artifactId>specs</artifactId>
+      <version>1.6.1</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -89,12 +91,46 @@
         <groupId>org.scala-tools</groupId>
         <artifactId>maven-scala-plugin</artifactId>
         <version>2.13.1</version>
+        <configuration>
+          <charset>UTF-8</charset>
+          <jvmArgs>
+            <jvmArg>-Xmx1024m</jvmArg>
+            <jvmArg>-DpackageLinkDefs=file:///Users/Indrajit/Projects/Community/Liftweb/gitrepo/dpp/liftweb-2.0/archetypes/lift-archetype-basic/target/packageLinkDefs.properties</jvmArg>
+          </jvmArgs>
+        </configuration>
         <executions>
           <execution>
             <goals>
               <goal>compile</goal>
               <goal>testCompile</goal>
             </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-resources-plugin</artifactId>
+        <version>2.4.2</version>
+        <executions>
+          <execution>
+            <id>default-copy-resources</id>
+            <phase>process-resources</phase>
+            <goals>
+              <goal>copy-resources</goal>
+            </goals>
+            <configuration>
+              <overwrite>true</overwrite>
+              <outputDirectory>/Users/Indrajit/Projects/Community/Liftweb/gitrepo/dpp/liftweb-2.0/archetypes/lift-archetype-basic/target</outputDirectory>
+              <resources>
+                <resource>
+                  <directory>/Users/Indrajit/Projects/Community/Liftweb/gitrepo/dpp/liftweb-2.0/archetypes/lift-archetype-basic/src</directory>
+                  <includes>
+                    <include>packageLinkDefs.properties</include>
+                  </includes>
+                  <filtering>true</filtering>
+                </resource>
+              </resources>
+            </configuration>
           </execution>
         </executions>
       </plugin>
@@ -156,6 +192,13 @@
         <groupId>org.scala-tools</groupId>
         <artifactId>maven-scala-plugin</artifactId>
         <version>2.13.1</version>
+        <configuration>
+          <charset>UTF-8</charset>
+          <jvmArgs>
+            <jvmArg>-Xmx1024m</jvmArg>
+            <jvmArg>-DpackageLinkDefs=file:///Users/Indrajit/Projects/Community/Liftweb/gitrepo/dpp/liftweb-2.0/archetypes/lift-archetype-basic/target/packageLinkDefs.properties</jvmArg>
+          </jvmArgs>
+        </configuration>
       </plugin>
     </plugins>
   </reporting>
