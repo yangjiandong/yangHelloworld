@@ -8,4 +8,9 @@ lift- 使用 Scala、Lift 和 jQuery 构建 Comet 应用程序 - 创建拍卖站
 
 mvn archetype:generate -U -DarchetypeGroupId=net.liftweb -DarchetypeArtifactId=lift-archetype-basic -DarchetypeVersion=2.0-M5 -DremoteRepositories=http://scala-tools.org/repo-releases  -DgroupId=com.yang.lift.helloworld -DartifactId=yangHelloworld
 
+2、cute pdf
+
+   可将页面打印到pdf
+
+
    --END
