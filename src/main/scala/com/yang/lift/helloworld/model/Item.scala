@@ -1,4 +1,4 @@
-package com.yang.lift.helloworld
+package com.yang.lift.helloworld.model
 
 import net.liftweb.mapper._
 import net.liftweb.util._
@@ -8,7 +8,9 @@ object ItemMetaData extends Item with KeyedMetaMapper[Long, Item]{
     override def fieldOrder = List(name, description, reserve, expiration)
 }
 
-class Item extends KeyedMapper[Long, Item] with CRUDify[Long, Item] {
+class Item extends KeyedMapper[Long, Item]
+//with CRUDify[Long, Item] TODO
+{
   def getSingleton = ItemMetaData
   def primaryKeyField = id
 

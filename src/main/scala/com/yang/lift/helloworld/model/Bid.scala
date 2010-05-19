@@ -1,6 +1,5 @@
-package com.yang.lift.helloworld
+package com.yang.lift.helloworld.model
 
-import model.{User, ItemMetaData}
 import net.liftweb.mapper._
 
 object BidMetaData extends Bid with KeyedMetaMapper[Long, Bid]{
