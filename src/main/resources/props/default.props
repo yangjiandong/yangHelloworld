@@ -1,1 +1,7 @@
 # Properties in this file will be read when running in dev mode
+
+# mysql
+db.driver=com.mysql.jdbc.Driver
+db.url=jdbc:mysql://localhost/lift-example1
+db.user=dev
+db.password=dev
