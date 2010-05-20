@@ -1,6 +1,9 @@
-package com.yang.lift.helloworld.model
+package com.yang.lift.helloworld {
+package model {
 
-import net.liftweb.mapper._
+import _root_.net.liftweb.mapper._
+import _root_.net.liftweb.util._
+import _root_.net.liftweb.common._
 
 object BidMetaData extends Bid with KeyedMetaMapper[Long, Bid]{
     override def dbTableName = "t_bids"
@@ -16,4 +19,6 @@ class Bid extends KeyedMapper[Long, Bid]{
     object amount extends MappedLong(this)
     object item extends MappedLongForeignKey(this, ItemMetaData)
     object user extends MappedLongForeignKey(this, User)
+}
+}
 }

@@ -1,7 +1,9 @@
-package com.yang.lift.helloworld.model
+package com.yang.lift.helloworld {
+package model {
 
-import net.liftweb.mapper._
-import net.liftweb.util._
+import _root_.net.liftweb.mapper._
+import _root_.net.liftweb.util._
+import _root_.net.liftweb.common._
 
 object ItemMetaData extends Item with KeyedMetaMapper[Long, Item]{
     override def dbTableName = "items"
@@ -9,6 +11,7 @@ object ItemMetaData extends Item with KeyedMetaMapper[Long, Item]{
 }
 
 class Item extends KeyedMapper[Long, Item]
+//with LongCRUDify[Item]
 //with CRUDify[Long, Item] TODO
 {
   def getSingleton = ItemMetaData
@@ -19,9 +22,11 @@ class Item extends KeyedMapper[Long, Item]
   object name extends MappedString(this, 100)
   object description extends MappedText(this)
   object expiration extends MappedDateTime(this)
+
   def bids = BidMetaData.findAll(By(BidMetaData.item, id))
 
   lazy val detailUrl = "/details.html?itemId=" + id.is
+
   def tr = {
       <tr>
           <td><a href={detailUrl}>{name}</a></td>
@@ -37,4 +42,6 @@ class Item extends KeyedMapper[Long, Item]
       }
       BidMetaData.create
   }
+}
+}
 }
