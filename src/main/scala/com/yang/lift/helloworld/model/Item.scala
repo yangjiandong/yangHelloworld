@@ -43,5 +43,20 @@ class Item extends KeyedMapper[Long, Item]
       BidMetaData.create
   }
 }
+
+//https://liftweb.assembla.com/spaces/liftweb/tickets/518-crudify-view--edit-and-delete-views-are-broken
+class Miner extends LongKeyedMapper[Miner] with IdPK {
+  def getSingleton = Miner
+  object name extends MappedString(this, 50)
+  object url_template extends MappedString(this, 255)
+  object override_function extends MappedText(this)
+  object user extends MappedLongForeignKey(this, User)
+}
+
+object Miner extends Miner with LongKeyedMetaMapper[Miner] with
+LongCRUDify[Miner] {
+  override def dbTableName = "miners"
+}
+
 }
 }
